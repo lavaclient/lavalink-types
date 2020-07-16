@@ -6,7 +6,7 @@ export interface LoadTracksResponse {
   loadType: LoadType;
   playlistInfo?: PlaylistInfo;
   tracks: Track[];
-  exception?: LoadTrackException
+  exception?: LoadTracksException
 }
 
 export interface PlaylistInfo {
