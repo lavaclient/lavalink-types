@@ -46,30 +46,3 @@ export interface FrameStats {
    */
   deficit?: number;
 }
-
-export interface NodeStats {
-  /**
-   * The amount of players on the node.
-   */
-  players: number;
-  /**
-   * The amount of players playing on the node.
-   */
-  playingPlayers: number;
-  /**
-   * The duration the node has been up.
-   */
-  uptime: number;
-  /**
-   * The nodes memory stats.
-   */
-  memory: MemoryStats;
-  /**
-   * The nodes CPU stats.
-   */
-  cpu: CPUStats;
-  /**
-   * The nodes frame stats.
-   */
-  frameStats?: FrameStats;
-}

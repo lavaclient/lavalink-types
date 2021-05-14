@@ -10,5 +10,4 @@ package-lock.json
 
 # Other
 *.env
-.npmignore
 tsconfig.tsbuildinfo

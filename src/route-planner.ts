@@ -28,7 +28,7 @@ export interface RoutePlannerDetails {
 /** Classes */
 
 export type RoutePlanner =
-  | RotatingIpRoutePlanner
+  | RotatingNanoIpRoutePlanner
   | NanoIpRoutePlanner
   | RotatingIpRoutePlanner;
 
