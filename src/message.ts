@@ -31,7 +31,7 @@ export type LavalinkMessage = IncomingMessage | OutgoingMessage;
 /**
  * Incoming messages.
  */
-export type IncomingMessage = PlayerEvent | PlayerUpdate
+export type IncomingMessage = PlayerEvent | PlayerUpdate | Stats;
 
 /**
  * Outgoing messages.
