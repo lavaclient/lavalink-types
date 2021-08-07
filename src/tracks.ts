@@ -1,4 +1,4 @@
-import type { FriendlyException } from "./common";
+import type { FriendlyException } from "./common.ts";
 
 export enum LoadType {
   /**

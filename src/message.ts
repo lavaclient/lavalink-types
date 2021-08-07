@@ -1,5 +1,5 @@
-import type { OpCode } from "./protocol";
-import type { PlayerUpdate, TrackEndEvent, TrackExceptionEvent, TrackStartEvent, TrackStuckEvent } from "./player";
+import type { OpCode } from "./protocol.ts";
+import type { PlayerUpdate, TrackEndEvent, TrackExceptionEvent, TrackStartEvent, TrackStuckEvent } from "./player.ts";
 import type {
   DistortionFilter,
   EqualizerFilter,
@@ -10,8 +10,8 @@ import type {
   TremoloFilter,
   VibratoFilter,
   VolumeFilter,
-} from "./filters";
-import type { CPUStats, FrameStats, MemoryStats } from "./stats";
+} from "./filters.ts";
+import type { CPUStats, FrameStats, MemoryStats } from "./stats.ts";
 
 /**
  *

@@ -3,9 +3,9 @@
  *
  * @see https://github.com/sedmelluq/lavaplayer/blob/master/main/src/main/java/com/sedmelluq/discord/lavaplayer/track/AudioTrackEndReason.java
  */
-import type { PlayerMessage } from "./message";
-import type { FriendlyException } from "./common";
-import type { EncodedTrack } from "./tracks";
+import type { PlayerMessage } from "./message.ts";
+import type { FriendlyException } from "./common.ts";
+import type { EncodedTrack } from "./tracks.ts";
 
 export type PlayerEventType =
   "TrackStartEvent"

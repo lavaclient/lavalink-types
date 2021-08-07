@@ -1,4 +1,4 @@
-import type { EqualizerBand } from "./player";
+import type { EqualizerBand } from "./player.ts";
 
 export enum Filter {
   Volume = "volume",
