@@ -4,7 +4,6 @@
  * @see https://github.com/sedmelluq/lavaplayer/blob/master/main/src/main/java/com/sedmelluq/discord/lavaplayer/track/AudioTrackEndReason.java
  */
 import type { PlayerMessage } from "./message.ts";
-import type { FriendlyException } from "./common.ts";
 import type { EncodedTrack } from "./tracks.ts";
 
 export type PlayerEventType =
@@ -125,17 +124,12 @@ export interface TrackExceptionEventData {
   /**
    * Audio track where the exception occurred.
    */
-  track: string;
+  track: string | null;
 
   /**
-   * The exception message.
+   * The exception.
    */
   error: string;
-
-  /**
-   * The exception that occurred.
-   */
-  exception: FriendlyException;
 }
 
 /**
