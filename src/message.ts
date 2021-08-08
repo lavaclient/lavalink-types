@@ -21,7 +21,7 @@ export type Message<O extends OpCode, D> = { op: O } & D;
 /**
  *
  */
-export type PlayerMessage<O extends OpCode, D = {}> = Message<O, { guildId: string } & D>;
+export type PlayerMessage<O extends OpCode, D = unknown> = Message<O, { guildId: string } & D>;
 
 /**
  * All types of messages.
@@ -54,7 +54,6 @@ export type FilterData = {
   [Filter.Rotation]: RotationFilter;
   [Filter.Distortion]: DistortionFilter;
 }
-
 
 /**
  * An event related to an audio player.
