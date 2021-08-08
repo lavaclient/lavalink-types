@@ -36,7 +36,7 @@ export type IncomingMessage = PlayerEvent | PlayerUpdate | Stats;
 /**
  * Outgoing messages.
  */
-export type OutgoingMessage = Filters | Play | Stop | Seek | Destroy | Volume | Pause | VoiceUpdate | ConfigureResuming;
+export type OutgoingMessage = Filters | Play | Stop | Seek | Destroy | Volume | Pause | VoiceUpdate | ConfigureResuming | Equalizer;
 
 
 /**
