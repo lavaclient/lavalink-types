@@ -36,7 +36,7 @@ export type IncomingMessage = PlayerEvent | PlayerUpdate | Stats;
 /**
  * Outgoing messages.
  */
-export type OutgoingMessage = Filters | Play | Stop | Seek | Destroy | Volume | Pause | VoiceUpdate;
+export type OutgoingMessage = Filters | Play | Stop | Seek | Destroy | Volume | Pause | VoiceUpdate | ConfigureResuming;
 
 
 /**
@@ -44,7 +44,7 @@ export type OutgoingMessage = Filters | Play | Stop | Seek | Destroy | Volume | 
  */
 export type Filters = PlayerMessage<"filters", Partial<FilterData>>;
 
-export interface FilterData {
+export type FilterData = {
   [Filter.Volume]: VolumeFilter;
   [Filter.Equalizer]: EqualizerFilter;
   [Filter.Karaoke]: KaraokeFilter;
@@ -88,6 +88,16 @@ export interface PlayData {
   volume?: number;
   noReplace?: boolean;
   pause?: boolean;
+}
+
+/**
+ * Configures resuming for this session.
+ */
+export type ConfigureResuming = Message<"configureResuming", ConfigureResumingData>;
+
+export interface ConfigureResumingData {
+  key: string;
+  timeout: number;
 }
 
 /**
