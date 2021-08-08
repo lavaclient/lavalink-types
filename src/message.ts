@@ -90,6 +90,16 @@ export interface PlayData {
 }
 
 /**
+ * Configures the equalizer.
+ * @deprecated in v4, use the filters api.
+ */
+export type Equalizer = PlayerMessage<"equalizer", EqualizerData>;
+
+export interface EqualizerData {
+  bands: EqualizerFilter;
+}
+
+/**
  * Configures resuming for this session.
  */
 export type ConfigureResuming = Message<"configureResuming", ConfigureResumingData>;

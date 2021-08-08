@@ -28,4 +28,4 @@ export interface Headers {
  */
 export type OpCode =
   | "voiceUpdate" | "play" | "stop" | "pause" | "seek" | "volume" | "filters" | "destroy"
-  | "stats" | "playerUpdate" | "event" | "configureResuming";
+  | "stats" | "playerUpdate" | "event" | "configureResuming" | "equalizer";
