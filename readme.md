@@ -1,19 +1,11 @@
 # Lavalink Typings
 
-Type definition files for [lavalink](https://github.com/freyacodes/Lavalink)
+Deno package for [lavalink](https://github.com/freyacodes/Lavalink) type definitions.
 
 ## Installation
 
-<sub>Yarn</sub>
-
-```shell
-$ yarn add @lavaclient/types
-```
-
-<sub>Npm</sub>
-
-```shell
-$ npm install @lavaclient/types
+```ts
+import * as Lavalink from "https://deno.land/x/lavalink_types@VERSION/mod.ts"
 ```
 
 ---
