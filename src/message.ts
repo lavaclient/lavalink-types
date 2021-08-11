@@ -1,5 +1,5 @@
 import type { OpCode } from "./protocol.ts";
-import type { PlayerUpdate, TrackEndEvent, TrackExceptionEvent, TrackStartEvent, TrackStuckEvent } from "./player.ts";
+import type { PlayerUpdate, TrackEndEvent, TrackExceptionEvent, TrackStartEvent, TrackStuckEvent, WebSocketClosedEvent } from "./player.ts";
 import type {
   DistortionFilter,
   EqualizerFilter,
@@ -58,7 +58,7 @@ export type FilterData = {
 /**
  * An event related to an audio player.
  */
-export type PlayerEvent = TrackStartEvent | TrackEndEvent | TrackStuckEvent | TrackExceptionEvent;
+export type PlayerEvent = TrackStartEvent | TrackEndEvent | TrackStuckEvent | TrackExceptionEvent | WebSocketClosedEvent;
 
 /**
  * Payload for providing an intercepted voice server & state update

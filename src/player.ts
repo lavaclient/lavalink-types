@@ -50,7 +50,7 @@ export enum TrackEndReason {
 /**
  *
  */
-export const mayStartNext: Record<TrackEndReason, Boolean> = {
+export const mayStartNext: Record<TrackEndReason, boolean> = {
   [TrackEndReason.Finished]: true,
   [TrackEndReason.LoadFailed]: true,
   [TrackEndReason.Stopped]: false,
@@ -89,7 +89,7 @@ export interface TrackEndEventData {
   /**
    * Audio track that ended.
    */
-  track: string;
+  track: string | null;
 
   /**
    * The reason why the track stopped playing.
@@ -107,7 +107,7 @@ export interface TrackStuckEventData {
   /**
    * Audio track where the exception occurred.
    */
-  track: string;
+  track: string | null;
 
   /**
    * The wait threshold that was exceeded for this event to trigger.
